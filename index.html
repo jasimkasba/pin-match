@@ -56,6 +56,7 @@
     </div>
 
     <script>
+        // input number.
        
         document.getElementById('screen-input').value = '';
         function buttonClick(num){
@@ -64,13 +65,14 @@
         if(num == ''){
         screen.value = num;
        }
-    }
+       } 
+      //backSpace
 
-    function backSpace(){
-    var screen = document.getElementById('screen-input').value;
-    var backSpace = screen.slice(0, screen.length - 1);
-    document.getElementById('screen-input').value = backSpace;
-    }
+      function backSpace(){
+      var screen = document.getElementById('screen-input').value;
+      var backSpace = screen.slice(0, screen.length - 1);
+      document.getElementById('screen-input').value = backSpace;
+      }
 
   
 
@@ -78,18 +80,18 @@
    
 
 
-   // generate pin 
+         // generate pin 
 
-    document.getElementById('randomPin').addEventListener('click', function(){
-    var randomNumber = Math.random() * 10000;
-     var intNumber = Math.round(randomNumber);
-     document.getElementById('screen').value = intNumber;
-     })
+      document.getElementById('randomPin').addEventListener('click', function(){
+      var randomNumber = Math.random() * 10000;
+      var intNumber = Math.round(randomNumber);
+      document.getElementById('screen').value = intNumber;
+      })
 
          
-     // submit button
+           // submit button
 
-     function submitButton(){
+         function submitButton(){
          let generateNumber = document.getElementById('screen');
          let generateValue = generateNumber.value;
          let screenNumber = document.getElementById('screen-input');
